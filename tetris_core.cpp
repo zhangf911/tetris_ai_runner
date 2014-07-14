@@ -1101,19 +1101,6 @@ namespace ai_path
     }
 }
 
-namespace ai_senior
-{
-    std::vector<char> make_path(TetrisNode const *from, TetrisNode const *to, TetrisMap const &map)
-    {
-        //TODO
-    }
-
-    std::pair<TetrisNode const *, int> do_ai(TetrisMap const &map, TetrisNode const *node, unsigned char next[], size_t next_count)
-    {
-        //TODO
-    }
-}
-
 int map_width = 0, map_height = 0;
 
 bool init_ai(int w, int h)

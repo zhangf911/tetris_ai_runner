@@ -337,15 +337,6 @@ namespace ai_path
     extern std::pair<TetrisNode const *, int> do_ai(TetrisMap const &map, TetrisNode const *node, unsigned char next[], size_t next_count);
 }
 
-//高级落点搜索,软降,踢墙(这里就不解释了),性能还不知道...TODO
-namespace ai_senior
-{
-    //创建一个操作路径(为空表示无法到达,末尾自带\0)
-    extern std::vector<char> make_path(TetrisNode const *from, TetrisNode const *to, TetrisMap const &map);
-    //AI入口
-    extern std::pair<TetrisNode const *, int> do_ai(TetrisMap const &map, TetrisNode const *node, unsigned char next[], size_t next_count);
-}
-
 //misakamm那里得到的mt随机
 namespace ege
 {
